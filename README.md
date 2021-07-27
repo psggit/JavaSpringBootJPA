@@ -18,3 +18,13 @@ We can also list the created employees.
 Whenever we create a employee an entry is pushed to queue. Listener to that queue will send email for the created user.
 
 When deploying in aws ec2 have not cretaed rabbitmq-server, so java application withh just throw and warning exception.
+
+In Mysql:
+
+1) Create database testdb: use testdb;
+2) create table employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100) not null,
+email VARCHAR(100) not null,
+phone VARCHAR(100)
+);
